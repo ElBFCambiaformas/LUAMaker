@@ -27,7 +27,7 @@ def generate_lua():
         arms_path += ".mdl"
 
     lua_code = f'''player_manager.AddValidModel( "{name}", "{model_path}" )
-player_manager.AddValidHands( "{name} Arms", "{arms_path}", 0, "00000000" )
+player_manager.AddValidHands( "{name}", "{arms_path}", 0, "00000000" )
 '''
 
     file_path = filedialog.asksaveasfilename(
@@ -80,3 +80,4 @@ generate_btn = tb.Button(
 generate_btn.pack(pady=25)
 
 root.mainloop()
+
